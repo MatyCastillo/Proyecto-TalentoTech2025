@@ -12,12 +12,6 @@ function Login() {
         <h2 className="text-2xl font-bold text-gray-800 mb-1">
           Log in <span className="font-normal text-gray-600">| Individual Edition</span>
         </h2>
-        <p className="text-sm text-gray-500 mb-6">
-          For school accounts, please go to your school login page.{' '}
-          <a href="#" className="text-blue-600 underline">
-            Look up your school code.
-          </a>
-        </p>
 
         {/* Formulario */}
         <form className="space-y-4">
