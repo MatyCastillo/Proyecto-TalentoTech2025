@@ -1,9 +1,18 @@
 {
-  "singleQuote": true,
-  "semi": true,
-  "printWidth": 100,
-  "trailingComma": "es5",
-  "tabWidth": 2,
-  "bracketSpacing": true,
-  "arrowParens": "always"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/prop-types": "off",  
+    "no-unused-vars": "warn",  
+    "no-console": "off"         
+  }
 }
