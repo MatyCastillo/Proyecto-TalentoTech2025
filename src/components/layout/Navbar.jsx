@@ -23,7 +23,7 @@ import { AuthContext } from "../../context/AuthContext";
 const navigation = [
   { name: "Inicio", href: "/", current: true, autorization: null },
   { name: "Categorías", href: "#", current: false, autorization: null },
-  { name: "Gestión de Productos", href: "/productos", autorization: "user" }, //si autorization es user quiere decir que debe estar autenticado
+  { name: "Gestión de Productos", href: "/productos", autorization: "user" },
 ];
 
 function classNames(...classes) {
@@ -47,9 +47,15 @@ export default function Example() {
   }, []);
 
   return (
-    <Disclosure as="nav" className="bg-gray-800 w-full">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div className="relative flex h-16 items-center justify-between">
+    <Disclosure as="nav" className="bg-transparent w-full">
+      <div className="w-[90%] mx-auto px-2 sm:px-6 lg:px-8">
+        <div
+          className="
+                relative flex h-16 items-center justify-between
+    bg-gray-800 rounded-b-2xl shadow-lg
+    mx-0 px-4
+          "
+        >
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -78,7 +84,7 @@ export default function Example() {
               <div className="flex space-x-4">
                 {navigation.map((item) => {
                   if (item.autorization === "user" && !isAuthenticated) {
-                    return null; // No mostrar si requiere autenticación y no está autenticado
+                    return null;
                   }
                   if (item.name === "Categorías") {
                     return (
