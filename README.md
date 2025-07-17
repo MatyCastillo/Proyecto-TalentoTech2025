@@ -44,8 +44,8 @@ La ruta `/productos` solo es accesible para usuarios autenticados. Si no has ini
 
 1. **Clona el repositorio:**
    ```bash
-   git clone <url-del-repo>
-   cd <nombre-del-repo>
+   git clone <https://github.com/MatyCastillo/Proyecto-TalentoTech2025.git>
+   cd <https://github.com/MatyCastillo/Proyecto-TalentoTech2025.git>
    ```
 
 2. **Instala las dependencias:**
@@ -61,21 +61,6 @@ La ruta `/productos` solo es accesible para usuarios autenticados. Si no has ini
 4. **Abre tu navegador en:**  
    [http://localhost:5173](http://localhost:5173) (o el puerto que indique la terminal)
 
-## Despliegue en producción
-
-1. **Build de producción:**
-   ```bash
-   npm run build
-   ```
-
-2. **El contenido de la carpeta `dist` es el que debes subir a tu hosting (por ejemplo, Netlify o Vercel).**
-
-3. **Para Netlify:**  
-   Asegúrate de tener un archivo `_redirects` en la carpeta `public` con el siguiente contenido para soportar rutas internas:
-   ```
-   /*    /index.html   200
-   ```
-
 ## Notas importantes
 
 - Los cambios en productos (CRUD) no son persistentes, ya que FakeStoreAPI es solo para pruebas.
@@ -84,4 +69,4 @@ La ruta `/productos` solo es accesible para usuarios autenticados. Si no has ini
 
 ---
 
-**Desarrollado para el Curso de React Taleto
+**Desarrollado para el Curso de React Taleto Tech 2025
